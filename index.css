@@ -1,0 +1,250 @@
+
+.header{
+   width: 1200px;
+    height:120px;
+    border:1px solid white;
+    margin:0 auto;
+    overflow:hidden;
+  }
+  .header .logo{
+    margin-top:38px;
+    float:left;
+  }
+  .header .search{
+    margin:40px;
+    float: right;
+    height:40px;
+  }
+  .nav li{
+    list-style: none;
+  }
+  .header .search input{
+    width:280px;
+    height:100%;
+    border:1px solid #ddd;
+    border-right: none;
+    border-radius:4px 0 0 4px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    outline: none;//聚焦边框消失
+  }
+  .header .search button{
+    width:80px;
+    height:100%;
+    border:none;
+    background: #66cc11;
+    color: #fff;
+    border-radius:0px 5px 5px 0;
+    font-size: 16px;
+    float:right;
+
+  }
+  .nav{
+    height:50px;
+    background:#5a5a5a;
+    width: 100%;
+  }
+  .nav ul{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+  }
+  .nav ul li a{
+    color:white;
+   text-decoration:none;
+  }
+  .nav ul li:active {
+    background:#66cc11;
+  }
+  .nav ul li:hover{
+    background:#66cc11;
+  }
+  .nav ul li{
+    float:left;
+    width:180px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    color:#fff;
+  }
+  .banner .swiper{
+    width:100%;
+    height:600px;
+  }
+  .swiper-container .swiper-wrapper{
+    width:100%;
+    height:500px;
+    text-align: center;
+  }
+  .banner .swiper .swiper-slide img{
+
+  }
+  .swiper-button-next,.swiper-button-prev{
+    color:white;
+  }
+  .banner-show{
+    background:url(../images/bannerDownBg.jpg) no-repeat;
+    height:430px;
+    width:1200px;
+    margin:0 auto;
+   background-size:cover;
+   // border:1px solid red;
+   text-align:center;
+   overflow:hidden;
+  }
+  .banner-show ul{
+    width: 600px;
+    height:220px;
+    margin:0 auto;
+
+  }
+  .banner-show ul li{
+    width:220px;
+    float:left;
+    margin:0 10px;
+    height:100%;
+    list-style:none;
+    position:relative;
+
+  }
+  .banner-show ul li img{
+    width:100%;
+    display:block;
+
+  }
+.banner-show ul:nth-child(1){
+   margin-top:40px;
+
+}
+.banner-show ul:nth-child(2){
+  position:relative;
+  top:-110px;
+  left:120px;
+}
+.banner-show ul li img:nth-child(2){
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  transition:all 0.5s;
+
+}
+.banner-show ul li:hover img:nth-child(2){
+  opacity:1;//opacity:不透明度
+
+}
+.banner-show ul li img:hover{
+  transform:translate(20px,20px);
+}
+.myPro{
+  width:1200px;
+  margin:0 auto;
+  text-align:center;
+  // height:1350px;
+}
+.myPro .myPro-title{
+position:relative;
+height:180px;
+}
+.myPro .line{
+  width:340px;
+  height:4px;
+  background:#66cc11;
+}
+.same{
+   position:absolute;
+  top:30%;
+  left:50%;
+   -webkit-transform:translate(-50%,-50%) ;
+     -moz-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+       -o-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%) ;
+}
+.myPro h2{
+  font-size:30px;
+  font-weight:700;
+  color:#333;
+  width:180px;
+  display:inline-block;
+  hidden:60px;
+  background:#fff;
+}
+.myPro .myPro-title p{
+  top:50%;
+}
+.pro-in{
+  width:100%;
+}
+.pro-in li{
+   display:inline-block;
+   width: 360px;
+   height:460px;
+   border:1px solid #aaa;
+   margin:16px;
+   text-align: center;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+   position:relative;
+    overflow:hidden;
+
+}
+.pro-in li:hover{
+  transform:scale(1.2);
+}
+.pro-in li:hover a:after,.pro-in li:hover a:before{
+  //  box-shadow: 10px 10px 20px gray;
+    s opacity:1;
+    content: '';
+    width: 100%;
+    padding-top: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: ripple 1.3s infinite;
+}
+.pro-in li img{
+  margin:0 auto;
+  width: 100%;
+}
+.pro-in li h3{
+  font-size:26px;
+  color:#333;
+  margin:50px 0 20px;
+}
+.pro-in li p:last-child{
+  color: #66cc11;
+  font-size:24px;
+}
+.pro-in li a:before{
+   width:320px;
+   height:420px;
+   border:2px solid #66CC11;
+   display:block;
+   content:'';
+   top:18px;
+   left:18px;
+   position:absolute;
+   opacity:0;
+}
+.pro-in li a:after{
+   width: 120px;
+   height:200px;
+   background:#66cc11;
+   display:block;
+   content:'';
+   bottom:-100px;
+   right:-60px;
+   position:absolute;
+   transform:rotate(45deg);
+   opacity:0;
+   transition:all 1.5s;
+}
+.e{
+  width:100%;
+  height:300px;
+  font-size:18px;
+  color:red;
+}
+
