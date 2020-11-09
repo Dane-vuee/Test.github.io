@@ -1,0 +1,487 @@
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color:#5a5a5a;
+}
+a{
+	text-decoration: none;
+	color:#5a5a5a;
+}
+
+/* header */
+.header{
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+}
+.logo{
+	float: left;
+	margin-top:32px;
+	
+}
+.search{
+	float: right;
+	margin-top:42px;
+}
+.search input{
+	float: left;
+	box-sizing: border-box;
+	height: 36px;
+	line-height: 36px;
+	outline: none;	
+}
+.search input[type=text]{
+	width: 260px;
+	border-radius:5px 0 0 5px;
+	padding-left: 10px;
+	border:1px solid #ccc;
+	border-right: 0;
+}
+.search input[type=submit]{
+	width: 80px;
+	border: none;
+	border-radius:0 5px 5px 0;
+	background:#66cc11;
+	color:#fff;
+	cursor: pointer;
+}
+
+
+/* nav */
+
+.nav{
+	height: 50px;
+	background:#5a5a5a;
+}
+.nav ul{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+.nav li{
+	float: left;
+	width:180px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+}
+.nav a{
+	color:#fff;
+}
+.nav .cur{
+	background:#66cc11;
+}
+
+/* banner */
+
+.banner{
+	height: 600px;
+	background:url(../images/banner.jpg) no-repeat center top;
+}
+.bannerDown{
+	width: 1200px;
+	height: 430px;
+	background:url(../images/bannerDownBg.jpg);
+	margin:0 auto;
+}
+.bannerDown ul{
+	width: 600px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.bannerDown li{
+	width: 220px;
+	float: left;
+	margin: 0 10px;
+	position: relative;
+	
+}
+.bannerDown li img:last-child{
+	position: absolute;
+	left: 0; 
+	top: 0;
+	opacity: 0;
+	transition: 0.5s;
+}
+.bannerDown li:hover img:last-child{
+	opacity: 1;
+}
+.bannerDown li img{
+	width: 100%;
+}
+.bannerDown ul:nth-child(1){
+	padding-top:40px;
+}
+.bannerDown ul:nth-child(2){
+	position: relative;
+	top: -100px;
+	left: 120px;
+}
+
+/* 新品展示 */
+
+.newPro{
+	height:1350px;
+	background:#f9f9f9;
+	text-align: center;
+}
+.newProIn{
+	width: 1200px;
+	height: 1350px;
+	margin: 0 auto;
+}
+.newProTil{
+	padding:60px 0;
+	line-height: 36px;
+}
+.newProTil h3{
+	font-size:30px;
+	font-weight: bold;
+	color:#333;
+	word-spacing:10px;
+}
+.newProTil p{
+	font-size: 18px;
+}
+.newProTil h3 span{
+	font-weight: bold;
+	color:#66cc11;
+}
+.pro li{
+	width: 360px;
+	height: 460px;
+	background: #fff;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	float: left;
+	margin:0 20px;
+	margin-bottom:40px;
+	position: relative;
+	overflow: hidden;
+
+}
+.pro{
+	overflow: hidden;
+}
+.pro h4{
+	font-size:26px;
+	color:#5a5a5a;
+	padding-top: 50px;
+}
+.pro p{
+	height: 50px;
+	line-height: 50px;
+}
+.pro .price{
+	font-size: 20px;
+	color:#66cc11;
+}
+.pro li a:before{
+	content:"";
+	width:320px;
+	height:420px;
+	border: 2px solid #66cc11;
+	position: absolute;
+	left: 18px;
+	top: 18px;
+	border-radius:5px;
+	display: none;
+}
+.pro li a:after{
+	content:"";
+	width: 120px;
+	height: 200px;
+	background:#66cc11;
+	position: absolute;
+	right:-50px;
+	bottom: -100px;
+	transform: rotate(45deg);
+	display: none;
+}
+.pro li a:hover:before{
+	display: block;
+}
+.pro li a:hover:after{
+	display: block;
+}
+.pro .cur a:before{
+	display: block;
+}
+.pro .cur a:after{
+	display: block;
+}
+.more{
+	width: 200px;
+	height: 50px;
+	background:#66cc11;
+	border-radius:5px;
+	line-height: 50px;
+	margin: 30px auto;
+	display: block;
+	color:#fff;
+	font-size:22px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	transition: 0.5s;
+}
+.more:hover{
+	filter:saturate(1.5);
+}
+
+/* 服务 */
+.service{
+	height: 200px;
+}
+.service ul{
+	width: 1200px;
+	height:200px;
+	margin: 0 auto;
+}
+.service ul li{
+	padding-top:50px;
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.service .iconfont{
+	font-size: 60px;
+	height: 60px;
+	line-height: 60px;
+	display: inline-block;
+}
+.service .icon-celiangfuwu{
+	font-size: 50px;
+}
+.service .icon-huanbao{
+	font-size: 50px;
+}
+.service  p{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.service ul li:hover .iconfont{
+	color:#66cc11;
+}
+
+/* footer */
+.footer{
+	height: 200px;
+	background: #333;
+	color:#999;
+	font-size: 16px;
+}
+.footerIn{
+	width: 1200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.footer .copy{
+	margin-top:20px;
+	float: left;
+	line-height: 30px;
+}
+.icon-youxiang{
+	margin-left: 20px;
+	font-size:18px;
+}
+.wechat{
+	float: right;
+	text-align: center;
+}
+.wechat h4{
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	color:#fff;
+}
+.wechat img{
+	width: 120px;
+}
+
+
+/* --------------------------------------列表页------------------------------------ */
+.listbanner{
+	height: 600px;
+	background:url(../images/listBanner.jpg) no-repeat center top;
+}
+
+.listPro{
+	height: auto;
+}
+.listProIn{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.listProIn .newProTil{
+	text-align: center;
+}
+
+.location{
+	padding-top: 10px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom:1px solid #eee;
+}
+.location span{
+	display: inline-block; border-bottom:3px solid #66cc11;
+}
+.listProNav{
+	width: 600px;
+	height: 50px;
+	margin: 0 auto;
+	
+}
+.listProNav li{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	
+}
+
+.listProNav li a{
+	display: block;
+	background: #333;
+	color:#fff;
+}
+.listProNav .cur{
+	background:#66cc11;
+}
+
+.listProCon{
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+.listProCon li{
+	width: 350px;
+	height: 370px;
+	border:1px solid #eee;
+	padding: 15px;
+	box-sizing: border-box;
+	float: left;
+	margin:0 25px 30px;
+	
+}
+.listProCon li img{
+	width: 100%;
+}
+.listProCon li p{
+	padding-top:12px;
+	text-align: center;
+}
+
+.page{
+	width: 365px;
+	overflow: hidden;
+	margin: 30px auto 100px;
+	font-size: 16px;
+}
+
+.page li{
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+	margin: 5px;
+	cursor: pointer;
+}
+.page .cur{
+	background: #333;
+	color:#fff;
+}
+
+
+/* ---------------------------------------detail------------------------------------------ */
+.detailBanner{
+	height:600px;
+	background:url(../images/detailBanner01.jpg) no-repeat center top;
+}
+
+.proShow{
+	padding: 60px 0;
+}
+.proShow dl{
+	height: 500px;
+}
+.proShow dt{
+	float: left; 
+	width: 500px;
+}
+.proShow dt img{
+	width: 500px;
+}
+.proShow dd{
+	float: left;
+	margin-left: 20px;
+	width: 680px;
+}
+.proShow dd h3{
+	height: 60px;
+	line-height: 60px;
+	font-size: 22px;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+.proShow dd p{
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.proShow dd p span{
+	font-weight: normal;
+}
+.market span{
+	text-decoration: line-through;
+}
+.price span{
+	color:#66cc11;
+	font-size: 30px;
+	font-weight: bold;
+}
+.articleTil{
+	border:1px solid #ccc;
+	padding:10px 5px;
+	background:#f5f5f5;
+}
+
+.articleCon{
+	line-height: 30px;
+}
+.articleCon p{
+	margin-top: 10px;
+	text-indent: 2em;
+}
+.turn{
+	line-height: 30px;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
